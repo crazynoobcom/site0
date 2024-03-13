@@ -1,6 +1,1 @@
-C:/Users/laven/OneDrive/Bureau/site0/mast.exe filter=lfs diff=lfs merge=lfs -text
-C:/Users/laven/OneDrive/Bureau/site0/mast.exe filter=lfs diff=lfs merge=lfs -text
- filter=lfs diff=lfs merge=lfs -text
-C:/Users/laven/OneDrive/Bureau/site0/mast.exe filter=lfs diff=lfs merge=lfs -text
 *.exe filter=lfs diff=lfs merge=lfs -text
-*.zip filter=lfs diff=lfs merge=lfs -text
