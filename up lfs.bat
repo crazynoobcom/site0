@@ -1,4 +1,4 @@
-git lfs track "*"
+cmd /min /C git lfs track "%1"
 
 git add .gitattributes
 
