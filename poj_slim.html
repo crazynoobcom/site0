@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <script>
+            window.addEventListener('scroll', function(){
+                const header = document.querySelector('header');
+                header.classList.toggle("sticky", window.scrollY > 0);
+            });
+        </script>
+        <meta name="google-site-verification" content="rkoIP6TA8JqLDIxvHLJFtOKPP2Tn8j8yMfsOdUlqUJw" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>xxLnolan</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="./index.html#jeux" class="logo">xx<span>L</span>nolan</a>
+            <div class="menuToggle" onclick="toggleMenu();"></div>
+            <ul class="navbar">
+                <li><a href="#">snail</a></li>
+                <li><a href="#apropos">A propos</a></li>
+                <a href="#tel" class="btn-reserve">telecharger</a>
+            </ul>
+        </header>
+        <section class="slama">
+            <div class="contenue">
+                <h2 class="titre-text"><span>S</span>nail</h2>
+                <p>snail et un jeux d'escargot dont le but est de manger toutes les friandises.</p>
+                <a class="btn-1" href="#tel">telecharger</a>
+            </div>
+        </section>
+        <section id="apropos">
+            <div class="row">
+                <div class="col50">
+                    <h2 class="titre-text">
+                        <span>A</span> propos
+                    </h2>aucune documentation officiel n'existe</p>
+                </div>
+                    <div class="col50">
+                        <div class="img">
+                            aucune image n'a été trouvé
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="tel" class="temoignage">
+            <div class="titre blanc">
+                <h2 class="titre-text2"><span>T</span>elecharger</h2>
+            </div>
+            <div class="contenu">
+                <div class="box">
+                    <div class="imbox">
+                        <img src="./img/windows_11.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p >De Windows 7 a 11.</p>
+                        <a class="tel" href="https://github.com/xxLnolan/site0/raw/main/Snail-setup.exe"><h3>telecharger</h3></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imbox">
+                        <img src="./img/linux.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p >Linux.</p>
+                        <a class="tel" href="https://github.com/xxLnolan/site0/raw/main/Snail_Platformer_v1.4_by_xxLnolan_linux.zip"><h3>telecharger</h3></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imbox">
+                        <img src="./img/Apple-logo-.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p >mac os.</p>
+                        <a class="tel" href="https://github.com/xxLnolan/site0/raw/main/Snail_Platformer_v1.4_by_xxLnolan_mac.zip"><h3>telecharger</h3></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imbox">
+                        <img src="./img/Capture d'écran 2023-10-22 132030.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p >Version web Pour téléphone(Sans telecharger)</p>
+                        <a class="tel" target="_Blank" href="./Snail Platformer v1.4.html"><h3>Jouer</h3></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+            <p>copyright 2023 <a href="#">xxLnolan </a>Tous droits reservés.</p>
+        </div>
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+                const header =document.querySelector('header');
+                header.classList.toggle("sticky", window.scrollY > 0 );
+            });
+       
+            function toggleMenu(){
+                const tmenuToggle = document.querySelector('.menuToggle');
+                const navbar = document.querySelector('.navbar');
+                navbar.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>

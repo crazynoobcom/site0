@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        
+        <meta name="google-site-verification" content="rkoIP6TA8JqLDIxvHLJFtOKPP2Tn8j8yMfsOdUlqUJw" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>xxLnolan</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="img/favicon.png">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">xx<span>L</span>nolan</a>
+            <div class="menuToggle" onclick="toggleMenu();"></div>
+            <ul class="navbar">
+                <li><a href="#" onclick="toggleMenu();">Accueli</a></li>
+                <li><a href="#apropos" onclick="toggleMenu();">A propos</a></li>
+                <li><a href="#jeux"onclick="toggleMenu();">jeux</a></li>
+                <a href="#contact" class="btn-reserve"onclick="toggleMenu();">contact</a>
+            </ul>
+        </header>
+        <section class="banniere" id="banniere">
+            <div class="contenue">
+                <h2>Accueil</h2>
+                <p>xxLnolan est une société de codage libre où vous pouvez trouver des jeux.</p>
+                <a class="btn-1" href="#jeux">Nos jeux</a>
+            </div>
+        </section>
+        <section class="apropos" id="apropos">
+            <div class="row">
+                <div class="col50">
+                    <h2 class="titre-text">
+                        <span>A</span> propos
+                    </h2>
+                    <p>xxLnolan a été créé en 2009 par Nolan Lavenier pour democratiser la programmation en developpant des jeux open souces et des jeux sur scratch.</p>
+                </div>
+                    <div class="col50">
+                        <div class="img">
+                            
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="jeux" id="jeux">
+            <div class="titre">
+                <h2 class="titre-text">
+                    <span>j</span>eux
+                </h2>
+                <p>D'incoyables jeux.</p>
+            </div>
+            <div class="contenue">
+                <div class="box">
+                    <div class="inbox">
+                        <a href="./projectJump_and_Jump_v2.html">
+                            <img src="./img/jumpv2.png" alt="jeux">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h3>Jump and jump v2</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="contenue">
+                <div class="box">
+                    <div class="inbox">
+                        <a href="./poj_slim.html">
+                            <img src="./img/sliam.png" alt="jeux"> 
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h3>Snail</h3>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="contenue">
+                <div class="box">
+                    <div class="inbox">
+                        <a href="./mast.html">
+                            <img src="./img/thumbnail1.png" alt="jeux"> 
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h3>THE MAST</h3>
+                    </div>
+                </div>
+            </div>-->
+        </section>
+        <section  class="contact" id="contact">
+            <div class="titre noir">
+                <h2 class="titre-text"><span>C</span>ontact</h2>
+                <p>Aider nous a nous amelioré</p>
+            </div>
+            <form class="contactform" onsubmit="sendEmail(); reset(); return false;">
+                <h3>Envoyer un message</h3>
+                <div class="inputboite">
+                    <input name="name" id="name" type="text" placeholder="nom(facultatif)">
+                </div>
+                <div class="inputboite">
+                    <input name="email" type="email" id="email" placeholder="email(facultatif)">
+                </div>
+                <div class="inputboite">
+                    <textarea name="massage" id="massage" row="4" placeholder="message" required></textarea>
+                </div>
+                <div class="inputboite">
+                    <button type="submit">envoyer</button>
+                </div>
+            </form>
+        </section>
+        <div class="copyright">
+            <p>copyright 2024 <a href="#">xxLnolan et Volki le bg tah les galaxie </a>Tous droits reservés.</p>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    SecureToken : "045fe4c1-36ec-486e-8610-ffa622c499d8",
+                    To : 'xxLnolan@xxL.com',
+                    From : "laveniernolan@gmail.com",
+                    Subject : "email: " + document.getElementById("email").value,
+                    Body : "email: " + document.getElementById("email").value
+                           + "<br> nom: " + document.getElementById("name").value
+                           + "<br> massages: " + document.getElementById("massage").value
+                }).then(
+                message => alert(message)
+                );
+            }
+        </script>
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+                const header =document.querySelector('header');
+                header.classList.toggle("sticky", window.scrollY > 0 );
+            });
+    
+            function toggleMenu(){
+                const menuToggle = document.querySelector('.menuToggle');
+                const navbar = document.querySelector('.navbar');
+                navbar.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>
