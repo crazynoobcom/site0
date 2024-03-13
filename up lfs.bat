@@ -1,8 +1,8 @@
-git lfs track %1
+git lfs track "*.zip"
 
-git add .gitattributes
+git add .gitattribtues
 
-git add %1
+cmd /min /C git add %1
 
 git commit -m "a"
 
